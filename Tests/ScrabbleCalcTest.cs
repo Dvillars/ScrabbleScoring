@@ -141,5 +141,20 @@ namespace ScrabbleCalc
             //Assert
             Assert.Equal(resultTest, result);
         }
+
+        [Fact]
+        public void IsScrabble_ScoreOfString_6()
+        {
+            //Arrange
+            string inputTest = "Hat";
+            int resultTest = 6;
+
+            //Act
+            Scrabble testCalc = new Scrabble(inputTest);
+            int result = testCalc.GetScore();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
     }
 }

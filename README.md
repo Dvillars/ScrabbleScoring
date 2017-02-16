@@ -29,7 +29,7 @@ This is a basic scrabble score calculator. It won't calculate the board conditio
 1. The program should take a single letter and output the score of that letter for scores of 10.
   * **Input:** "Q"
   * **Output:** "10"
-1. The program should take a single letter regardless if case and output the score of that letter.
+1. The program should take a single letter regardless of case and output the score of that letter.
   * **Input:** "a"
   * **Output:** "1"
 - The program should take a string of letters, and output the score total.
