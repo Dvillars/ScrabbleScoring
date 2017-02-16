@@ -12,11 +12,11 @@ namespace ScrabbleCalc
         {
             //Arrange
             string inputTest = "E";
-            int resultTest = 1;
+            string resultTest = "1";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
-            int result = testCalc.GetScore();
+            string result = testCalc.GetScore();
 
             //Assert
             Assert.Equal(resultTest, result);
@@ -27,11 +27,11 @@ namespace ScrabbleCalc
         {
             //Arrange
             string inputTest = "D";
-            int resultTest = 2;
+            string resultTest = "2";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
-            int result = testCalc.GetScore();
+            string result = testCalc.GetScore();
 
             //Assert
             Assert.Equal(resultTest, result);
@@ -42,11 +42,11 @@ namespace ScrabbleCalc
         {
             //Arrange
             string inputTest = "B";
-            int resultTest = 3;
+            string resultTest = "3";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
-            int result = testCalc.GetScore();
+            string result = testCalc.GetScore();
 
             //Assert
             Assert.Equal(resultTest, result);
@@ -57,11 +57,11 @@ namespace ScrabbleCalc
         {
             //Arrange
             string inputTest = "F";
-            int resultTest = 4;
+            string resultTest = "4";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
-            int result = testCalc.GetScore();
+            string result = testCalc.GetScore();
 
             //Assert
             Assert.Equal(resultTest, result);
@@ -72,11 +72,11 @@ namespace ScrabbleCalc
         {
             //Arrange
             string inputTest = "K";
-            int resultTest = 5;
+            string resultTest = "5";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
-            int result = testCalc.GetScore();
+            string result = testCalc.GetScore();
 
             //Assert
             Assert.Equal(resultTest, result);
@@ -87,11 +87,11 @@ namespace ScrabbleCalc
         {
             //Arrange
             string inputTest = "J";
-            int resultTest = 8;
+            string resultTest = "8";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
-            int result = testCalc.GetScore();
+            string result = testCalc.GetScore();
 
             //Assert
             Assert.Equal(resultTest, result);
@@ -102,11 +102,11 @@ namespace ScrabbleCalc
         {
             //Arrange
             string inputTest = "Z";
-            int resultTest = 10;
+            string resultTest = "10";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
-            int result = testCalc.GetScore();
+            string result = testCalc.GetScore();
 
             //Assert
             Assert.Equal(resultTest, result);
@@ -117,11 +117,11 @@ namespace ScrabbleCalc
         {
             //Arrange
             string inputTest = "!";
-            int resultTest = 0;
+            string resultTest = "Please enter a single word with no special characters";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
-            int result = testCalc.GetScore();
+            string result = testCalc.GetScore();
 
             //Assert
             Assert.Equal(resultTest, result);
@@ -132,11 +132,11 @@ namespace ScrabbleCalc
         {
             //Arrange
             string inputTest = "a";
-            int resultTest = 1;
+            string resultTest = "1";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
-            int result = testCalc.GetScore();
+            string result = testCalc.GetScore();
 
             //Assert
             Assert.Equal(resultTest, result);
@@ -147,11 +147,26 @@ namespace ScrabbleCalc
         {
             //Arrange
             string inputTest = "Hat";
-            int resultTest = 6;
+            string resultTest = "6";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
-            int result = testCalc.GetScore();
+            string result = testCalc.GetScore();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
+
+        [Fact]
+        public void IsScrabble_InvalidCharacter_phrase()
+        {
+            //Arrange
+            string inputTest = "here is a test string";
+            string resultTest = "Please enter a single word with no special characters";
+
+            //Act
+            Scrabble testCalc = new Scrabble(inputTest);
+            string result = testCalc.GetScore();
 
             //Assert
             Assert.Equal(resultTest, result);

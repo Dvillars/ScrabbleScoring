@@ -44,14 +44,22 @@ namespace ScrabbleCalc.Objects
                 }
                 else
                 {
-                    _score += 0;
+                    _score = -1;
+                    break;
                 }
             }
         }
 
-        public int GetScore()
+        public string GetScore()
         {
-            return _score;
+            if(_score == -1)
+            {
+                return "Please enter a single word with no special characters";
+            }
+            else
+            {
+                return _score.ToString();
+            }
         }
     }
 }

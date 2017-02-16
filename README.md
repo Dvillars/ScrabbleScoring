@@ -37,7 +37,7 @@ This is a basic scrabble score calculator. It won't calculate the board conditio
   * **Output:** 14
 - The program should be limited to one word at a time.
   * **Input:** "About time"
-  * **Output:** "Please insert one word at a time"
+  * **Output:** "Please enter a single word with no special characters"
 
 
 ## Key
