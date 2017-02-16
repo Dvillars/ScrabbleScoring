@@ -66,5 +66,20 @@ namespace ScrabbleCalc
             //Assert
             Assert.Equal(resultTest, result);
         }
+
+        [Fact]
+        public void IsScrabble_ScoreOfLetter_5()
+        {
+            //Arrange
+            string inputTest = "K";
+            int resultTest = 5;
+
+            //Act
+            Scrabble testCalc = new Scrabble(inputTest);
+            int result = testCalc.GetScore();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
     }
 }

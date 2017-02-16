@@ -9,7 +9,7 @@ namespace ScrabbleCalc.Objects
 
         public Scrabble(string input)
         {
-            if(input == "A" || input == "E" || input == "I" || input == "O" || input == "U" || input == "L" || input == "N" || input == "R" || input == "S" || input == "T")
+            if (input == "A" || input == "E" || input == "I" || input == "O" || input == "U" || input == "L" || input == "N" || input == "R" || input == "S" || input == "T")
             {
                 _score = 1;
             }
@@ -17,13 +17,17 @@ namespace ScrabbleCalc.Objects
             {
                 _score = 2;
             }
-            else if(input == "B" || input == "C" || input == "M" || input == "P")
+            else if (input == "B" || input == "C" || input == "M" || input == "P")
             {
                 _score = 3;
             }
-            else if(input == "F" || input == "H" || input == "V" || input == "W" || input == "Y")
+            else if (input == "F" || input == "H" || input == "V" || input == "W" || input == "Y")
             {
                 _score = 4;
+            }
+            else if (input == "K")
+            {
+                _score = 5;
             }
         }
 
