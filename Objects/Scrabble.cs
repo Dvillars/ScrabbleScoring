@@ -9,31 +9,32 @@ namespace ScrabbleCalc.Objects
 
         public Scrabble(string input)
         {
-            if (input == "A" || input == "E" || input == "I" || input == "O" || input == "U" || input == "L" || input == "N" || input == "R" || input == "S" || input == "T")
+            string userInput = input.ToUpper();
+            if (userInput == "A" || userInput == "E" || userInput == "I" || userInput == "O" || userInput == "U" || userInput == "L" || userInput == "N" || userInput == "R" || userInput == "S" || userInput == "T")
             {
                 _score = 1;
             }
-            else if (input == "D" || input == "G")
+            else if (userInput == "D" || userInput == "G")
             {
                 _score = 2;
             }
-            else if (input == "B" || input == "C" || input == "M" || input == "P")
+            else if (userInput == "B" || userInput == "C" || userInput == "M" || userInput == "P")
             {
                 _score = 3;
             }
-            else if (input == "F" || input == "H" || input == "V" || input == "W" || input == "Y")
+            else if (userInput == "F" || userInput == "H" || userInput == "V" || userInput == "W" || userInput == "Y")
             {
                 _score = 4;
             }
-            else if (input == "K")
+            else if (userInput == "K")
             {
                 _score = 5;
             }
-            else if (input == "J" || input == "X")
+            else if (userInput == "J" || userInput == "X")
             {
                 _score = 8;
             }
-            else if (input == "Q" || input == "Z")
+            else if (userInput == "Q" || userInput == "Z")
             {
                 _score = 10;
             }

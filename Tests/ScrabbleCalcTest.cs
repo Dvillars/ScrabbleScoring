@@ -126,5 +126,20 @@ namespace ScrabbleCalc
             //Assert
             Assert.Equal(resultTest, result);
         }
+
+        [Fact]
+        public void IsScrabble_ScoreOfLowerCaseLetter_1()
+        {
+            //Arrange
+            string inputTest = "a";
+            int resultTest = 1;
+
+            //Act
+            Scrabble testCalc = new Scrabble(inputTest);
+            int result = testCalc.GetScore();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
     }
 }
