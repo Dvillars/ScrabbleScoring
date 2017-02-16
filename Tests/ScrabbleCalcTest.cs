@@ -11,8 +11,23 @@ namespace ScrabbleCalc
         public void IsScrabble_ScoreOfLetter_1()
         {
             //Arrange
-            string inputTest = "A";
+            string inputTest = "E";
             int resultTest = 1;
+
+            //Act
+            Scrabble testCalc = new Scrabble(inputTest);
+            int result = testCalc.GetScore();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
+
+        [Fact]
+        public void IsScrabble_ScoreOfLetter_2()
+        {
+            //Arrange
+            string inputTest = "D";
+            int resultTest = 2;
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);

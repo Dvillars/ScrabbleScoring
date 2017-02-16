@@ -8,12 +8,30 @@ This is a basic scrabble score calculator. It won't calculate the board conditio
 
 ## Specs
 
-1. The program should take a single letter and output the score of that letter.
+1. The program should take a single letter and output the score of that letter for scores of 1.
   * **Input:** "A"
   * **Output:** "1"
+1. The program should take a single letter and output the score of that letter for scores of 2.
+  * **Input:** "D"
+  * **Output:** "2"
+1. The program should take a single letter and output the score of that letter for scores of 3.
+  * **Input:** "B"
+  * **Output:** "3"
+1. The program should take a single letter and output the score of that letter for scores of 4.
+  * **Input:** "F"
+  * **Output:** "4"
+1. The program should take a single letter and output the score of that letter for scores of 5.
+  * **Input:** "K"
+  * **Output:** "8"
+1. The program should take a single letter and output the score of that letter for scores of 8.
+  * **Input:** "J"
+  * **Output:** "8"
+1. The program should take a single letter and output the score of that letter for scores of 10.
+  * **Input:** "Q"
+  * **Output:** "10"
 - The program should take a string of letters, and output the score total.
-  * **Input:** "AAAAA"
-  * **Output:** 5
+  * **Input:** "AAAAz"
+  * **Output:** 14
 - The program should be limited to one word at a time.
   * **Input:** "About time"
   * **Output:** "Please insert one word at a time"
