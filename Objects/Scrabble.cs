@@ -29,6 +29,14 @@ namespace ScrabbleCalc.Objects
             {
                 _score = 5;
             }
+            else if (input == "J" || input == "X")
+            {
+                _score = 8;
+            }
+            // else if (input == "Q" || input == "Z")
+            // {
+            //     _score = 10;
+            // }
         }
 
         public int GetScore()

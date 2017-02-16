@@ -81,5 +81,20 @@ namespace ScrabbleCalc
             //Assert
             Assert.Equal(resultTest, result);
         }
+
+        [Fact]
+        public void IsScrabble_ScoreOfLetter_8()
+        {
+            //Arrange
+            string inputTest = "J";
+            int resultTest = 8;
+
+            //Act
+            Scrabble testCalc = new Scrabble(inputTest);
+            int result = testCalc.GetScore();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
     }
 }
