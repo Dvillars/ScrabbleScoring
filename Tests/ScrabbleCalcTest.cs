@@ -146,8 +146,8 @@ namespace ScrabbleCalc
         public void IsScrabble_ScoreOfString_6()
         {
             //Arrange
-            string inputTest = "Hat";
-            string resultTest = "6";
+            string inputTest = "AAAAz";
+            string resultTest = "14";
 
             //Act
             Scrabble testCalc = new Scrabble(inputTest);
@@ -161,7 +161,7 @@ namespace ScrabbleCalc
         public void IsScrabble_InvalidCharacter_phrase()
         {
             //Arrange
-            string inputTest = "here is a test string";
+            string inputTest = "About time";
             string resultTest = "Please enter a single word with no special characters";
 
             //Act

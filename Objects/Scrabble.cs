@@ -44,7 +44,7 @@ namespace ScrabbleCalc.Objects
                 }
                 else
                 {
-                    _score = -1;
+                    _score = -1337;
                     break;
                 }
             }
@@ -52,7 +52,7 @@ namespace ScrabbleCalc.Objects
 
         public string GetScore()
         {
-            if(_score == -1)
+            if(_score == -1337)
             {
                 return "Please enter a single word with no special characters";
             }
