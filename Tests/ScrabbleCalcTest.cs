@@ -111,5 +111,20 @@ namespace ScrabbleCalc
             //Assert
             Assert.Equal(resultTest, result);
         }
+
+        [Fact]
+        public void IsScrabble_ScoreOfInvalidLetter_0()
+        {
+            //Arrange
+            string inputTest = "!";
+            int resultTest = 0;
+
+            //Act
+            Scrabble testCalc = new Scrabble(inputTest);
+            int result = testCalc.GetScore();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
     }
 }

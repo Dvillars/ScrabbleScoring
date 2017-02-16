@@ -37,6 +37,10 @@ namespace ScrabbleCalc.Objects
             {
                 _score = 10;
             }
+            else
+            {
+                _score = 0;
+            }
         }
 
         public int GetScore()
